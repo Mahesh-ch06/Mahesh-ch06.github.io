@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association - Messages</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Alumni Association</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="messages.html" class="active">Messages</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="Screenshot 2024-08-26 121820.png" alt="Profile Picture">
+                <h3>Mahesh</h3>
+                <p>Class of 2027</p>
+            </div>
+            <nav class="menu">
+                <a href="registration.html"><i class='bx bxs-user-plus'></i> Alumni Registration</a>
+                <a href="donation.html"><i class='bx bxs-donate-heart'></i> Donation Portal</a>
+                <a href="networking.html"><i class='bx bxs-network-chart'></i> Networking Hub</a>
+                <a href="jobs.html"><i class='bx bxs-briefcase'></i> Job Portal</a>
+                <a href="directory.html"><i class='bx bxs-book-content'></i> Alumni Directory</a>
+                <a href="success.html"><i class='bx bxs-trophy'></i> Success Story Tracking</a>
+                <a href="events.html"><i class='bx bxs-calendar-event'></i> Events and Reunions</a>
+                <a href="feedback.html"><i class='bx bxs-chat'></i> Feedback and Surveys</a>
+            </nav>
+        </aside>
+
+        <section class="main-section">
+            <article class="card">
+                <h2>Your Messages</h2>
+                <p>This is your messages page. Here you can view, send, and receive messages from other alumni.</p>
+            </article>
+
+            <!-- Messaging Section -->
+            <div class="messaging-container">
+                <div class="conversation-list">
+                    <div class="conversation active">
+                        <img src="https://via.placeholder.com/50" alt="User 1">
+                        <div class="conversation-info">
+                            <h4>Jane Doe</h4>
+                            <p>Hey, are you attending the Alumni Meet?</p>
+                        </div>
+                    </div>
+                    <div class="conversation">
+                        <img src="https://via.placeholder.com/50" alt="User 2">
+                        <div class="conversation-info">
+                            <h4>John Smith</h4>
+                            <p>Let's catch up soon!</p>
+                        </div>
+                    </div>
+                    <div class="conversation">
+                        <img src="https://via.placeholder.com/50" alt="User 3">
+                        <div class="conversation-info">
+                            <h4>Alice Brown</h4>
+                            <p>Looking forward to the next reunion.</p>
+                        </div>
+                    </div>
+                    <!-- Add more conversations as needed -->
+                </div>
+
+                <div class="chat-window">
+                    <div class="chat-header">
+                        <img src="https://via.placeholder.com/50" alt="Chat User">
+                        <h4>Jane Doe</h4>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message received">
+                            <p>Hey, are you attending the Alumni Meet?</p>
+                        </div>
+                        <div class="message sent">
+                            <p>Yes, I am! Are you?</p>
+                        </div>
+                        <div class="message received">
+                            <p>Definitely! Looking forward to catching up.</p>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Type a message...">
+                        <button type="button"><i class='bx bx-send'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Messaging Section -->
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+    

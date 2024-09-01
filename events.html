@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association - Events and Reunions</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Alumni Association</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="Screenshot 2024-08-26 121820.png" alt="Profile Picture">
+                <h3>Mahesh</h3>
+                <p>Class of 2027</p>
+            </div>
+            <nav class="menu">
+                <a href="registration.html"><i class='bx bxs-user-plus'></i> Alumni Registration</a>
+                <a href="donation.html"><i class='bx bxs-donate-heart'></i> Donation Portal</a>
+                <a href="networking.html"><i class='bx bxs-network-chart'></i> Networking Hub</a>
+                <a href="jobs.html"><i class='bx bxs-briefcase'></i> Job Portal</a>
+                <a href="directory.html"><i class='bx bxs-book-content'></i> Alumni Directory</a>
+                <a href="success.html"><i class='bx bxs-trophy'></i> Success Story Tracking</a>
+                <a href="events.html" class="active"><i class='bx bxs-calendar-event'></i> Events and Reunions</a>
+                <a href="feedback.html"><i class='bx bxs-chat'></i> Feedback and Surveys</a>
+            </nav>
+        </aside>
+
+        <section class="main-section">
+            <article class="card">
+                <h2>Events and Reunions</h2>
+                <p>Stay informed about upcoming events and reunions. Don't miss the chance to reconnect with your classmates.</p>
+            </article>
+
+            <!-- Events Section -->
+            <section class="events">
+                <div class="event-card">
+                    <h3>Alumni Meet 2025</h3>
+                    <p class="event-date">Date: December 15, 2025</p>
+                    <div class="event-description">
+                        <p class="short-text">"Reconnect, Relive, and Rekindle: Join us at the 2025 Alumni Meet to celebrate the bonds that never fade!" </p>
+                        <p class="full-text">Join us for the Alumni Meet 2025, where alumni from all batches will come together to reconnect, reminisce, and celebrate the achievements of our esteemed alumni community. The event will feature keynote speeches, networking sessions, and a gala dinner.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <h3>Annual Tech Conference</h3>
+                    <p class="event-date">Date: January 22, 2026</p>
+                    <div class="event-description">
+                        <p class="short-text">"Unleash the Future: Join us at the Annual Tech Conference 2026, where innovation meets inspiration, and the brightest minds converge to shape tomorrow's world!"</p>
+                        <p class="full-text">The Annual Tech Conference 2026 will bring together industry leaders and alumni to discuss the latest trends in technology, innovation, and entrepreneurship. Attendees will have the opportunity to participate in workshops, panel discussions, and networking events.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <h3>Class of 2015 Reunion</h3>
+                    <p class="event-date">Date: May 18, 2024</p>
+                    <div class="event-description">
+                        <p class="short-text">"Back Together, Better Than Ever: Class of 2015 Reunion—Where Memories Spark New Beginnings!"</p>
+                        <p class="full-text">The Class of 2015 is celebrating its 9-year reunion with a special event on campus. Reconnect with old friends and faculty, share your journey since graduation, and enjoy a nostalgic walk down memory lane with a campus tour and a lunch gathering.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <h3>Memory Lane Exhibit</h3>
+                    <p class="event-date">Date: January 24, 2025</p>
+                    <div class="event-description">
+                        <p class="short-text">"Step Back in Time: Relive the Moments, Rediscover the Memories at the Memory Lane Exhibit!"</p>
+                        <p class="full-text">Take a step back in time and relive the memories where the past comes alive and memories never fade....Rediscover the moments that shaped us, and the memories that make us...</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+
+                <!-- Add more event cards as needed -->
+            </section>
+            <!-- End of Events Section -->
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+        });
+
+        // Script to handle the "Read more" functionality
+        document.querySelectorAll('.read-more').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const fullText = this.previousElementSibling;
+                fullText.style.display = 'inline';
+                this.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

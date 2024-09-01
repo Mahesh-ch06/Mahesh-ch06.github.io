@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association - Networking Hub</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Alumni Association</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="Screenshot 2024-08-26 121820.png" alt="Profile Picture">
+                <h3>Mahesh</h3>
+                <p>Class of 2027</p>
+            </div>
+            <nav class="menu">
+                <a href="registration.html"><i class='bx bxs-user-plus'></i> Alumni Registration</a>
+                <a href="donation.html"><i class='bx bxs-donate-heart'></i> Donation Portal</a>
+                <a href="networking.html" class="active"><i class='bx bxs-network-chart'></i> Networking Hub</a>
+                <a href="jobs.html"><i class='bx bxs-briefcase'></i> Job Portal</a>
+                <a href="directory.html"><i class='bx bxs-book-content'></i> Alumni Directory</a>
+                <a href="success.html"><i class='bx bxs-trophy'></i> Success Story Tracking</a>
+                <a href="events.html"><i class='bx bxs-calendar-event'></i> Events and Reunions</a>
+                <a href="feedback.html"><i class='bx bxs-chat'></i> Feedback and Surveys</a>
+            </nav>
+        </aside>
+
+        <section class="main-section">
+            <article class="card">
+                <h2>Networking Hub</h2>
+                <p>Connect with fellow alumni through the Networking Hub. Share ideas, collaborate, and grow your professional network.</p>
+            </article>
+
+            <!-- Networking Hub Section -->
+            <section class="networking-hub">
+                <div class="network-card">
+                    <img src="" alt="Profile Picture" class="profile-pic">
+                    <div class="network-details">
+                        <h3>...</h3>
+                        <p>Software Engineer at Google</p>
+                        <p>Class of 2019</p>
+                        <button class="connect-button"><i class='bx bx-user-plus'></i> Connect</button>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <img src="" alt="Profile Picture" class="profile-pic">
+                    <div class="network-details">
+                        <h3>...</h3>
+                        <p>Software Engineer at Microsoft</p>
+                        <p>Class of 2020</p>
+                        <button class="connect-button"><i class='bx bx-user-plus'></i> Connect</button>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <img src=""alt="Profile Picture" class="profile-pic">
+                    <div class="network-details">
+                        <h3>...</h3>
+                        <p>Data Scientist at Facebook</p>
+                        <p>Class of 2018</p>
+                        <button class="connect-button"><i class='bx bx-user-plus'></i> Connect</button>
+                    </div>
+                </div>
+
+                <!-- Add more network cards as needed -->
+            </section>
+            <!-- End of Networking Hub Section -->
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association - Notifications</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Alumni Association</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="notifications.html" class="active">Notifications</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="Screenshot 2024-08-26 121820.png" alt="Profile Picture">
+                <h3>Mahesh</h3>
+                <p>Class of 2027</p>
+            </div>
+            <nav class="menu">
+                <a href="registration.html"><i class='bx bxs-user-plus'></i> Alumni Registration</a>
+                <a href="donation.html"><i class='bx bxs-donate-heart'></i> Donation Portal</a>
+                <a href="networking.html"><i class='bx bxs-network-chart'></i> Networking Hub</a>
+                <a href="jobs.html"><i class='bx bxs-briefcase'></i> Job Portal</a>
+                <a href="directory.html"><i class='bx bxs-book-content'></i> Alumni Directory</a>
+                <a href="success.html"><i class='bx bxs-trophy'></i> Success Story Tracking</a>
+                <a href="events.html"><i class='bx bxs-calendar-event'></i> Events and Reunions</a>
+                <a href="feedback.html"><i class='bx bxs-chat'></i> Feedback and Surveys</a>
+            </nav>
+        </aside>
+
+        <section class="main-section">
+            <article class="card">
+                <h2>Your Notifications</h2>
+                <p>This is your notifications page. You can view recent updates, messages, and other important information here.</p>
+            </article>
+        
+            <div class="notifications-container">
+                <div class="filter">
+                    <label for="notification-filter">Filter by:</label>
+                    <select id="notification-filter">
+                        <option value="all">All</option>
+                        <option value="messages">Messages</option>
+                        <option value="updates">Updates</option>
+                        <option value="events">Events</option>
+                    </select>
+                </div>
+        
+                <ul class="notification-list">
+                    <li class="notification-item">
+                        <div class="notification-title">New Message from John Doe</div>
+                        <div class="notification-time">August 31, 2024, 10:00 AM</div>
+                        <div class="notification-desc">Hey, let's catch up this weekend!</div>
+                        <button class="mark-read">Mark as Read</button>
+                    </li>
+                    <li class="notification-item">
+                        <div class="notification-title">Event: Alumni Reunion 2024</div>
+                        <div class="notification-time">August 30, 2024, 2:00 PM</div>
+                        <div class="notification-desc">Join us for the annual alumni reunion. RSVP today!</div>
+                        <button class="mark-read">Mark as Read</button>
+                    </li>
+                    <!-- Add more notifications as needed -->
+                </ul>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.mark-read').forEach(button => {
+            button.addEventListener('click', function() {
+                this.closest('.notification-item').style.display = 'none';
+            });
+        });
+        
+        document.getElementById('notification-filter').addEventListener('change', function() {
+            const filterValue = this.value;
+            document.querySelectorAll('.notification-item').forEach(item => {
+                if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>

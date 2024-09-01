@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association - Profile</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Alumni Association</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="profile.html" class="active">Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="Screenshot 2024-08-26 121820.png" alt="Profile Picture">
+                <h3>Mahesh</h3>
+                <p>Class of 2027</p>
+            </div>
+            <nav class="menu">
+                <a href="registration.html"><i class='bx bxs-user-plus'></i> Alumni Registration</a>
+                <a href="donation.html"><i class='bx bxs-donate-heart'></i> Donation Portal</a>
+                <a href="networking.html"><i class='bx bxs-network-chart'></i> Networking Hub</a>
+                <a href="jobs.html"><i class='bx bxs-briefcase'></i> Job Portal</a>
+                <a href="directory.html"><i class='bx bxs-book-content'></i> Alumni Directory</a>
+                <a href="success.html"><i class='bx bxs-trophy'></i> Success Story Tracking</a>
+                <a href="events.html"><i class='bx bxs-calendar-event'></i> Events and Reunions</a>
+                <a href="feedback.html"><i class='bx bxs-chat'></i> Feedback and Surveys</a>
+            </nav>
+        </aside>
+
+        <section class="main-section">
+            <article class="card">
+                <h2>Your Profile</h2>
+                <p>This is your profile page. You can update your personal information, view your activity, and manage your account here.</p>
+            </article>
+
+            <!-- Profile Information Section -->
+            <section class="profile-info">
+                <div class="profile-card">
+                    <h3>Personal Information</h3>
+                    <p><strong>Name:</strong> Mahesh</p>
+                    <p><strong>Email:</strong> Maheshch1094@gmail.com</p>
+                    <p><strong>Class:</strong> 2027</p>
+                    <p><strong>Occupation:</strong> Software Engineer at Google</p>
+                    <a href="#" class="edit-button">Edit</a>
+                </div>
+
+                <div class="profile-card">
+                    <h3>Recent Activity</h3>
+                    <p>You registered for the Alumni Meet 2024.</p>
+                    <p>You updated your profile information.</p>
+                    <p>You connected with Jane Smith on the Networking Hub.</p>
+                </div>
+
+                <div class="profile-card">
+                    <h3>Account Management</h3>
+                    <a href="#" class="account-link">Change Password</a>
+                    <a href="#" class="account-link">Deactivate Account</a>
+                    <a href="#" class="account-link">Privacy Settings</a>
+                </div>
+            </section>
+            <!-- End of Profile Information Section -->
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
